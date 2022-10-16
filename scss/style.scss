@@ -43,6 +43,24 @@ html {
   height: 100%;
   background-color: var(--container-color);
   scroll-behavior: smooth;
+
+  // DARK MODE
+  &.dark {
+    --container-color: #2a3342;
+    --title-color: #fcfcfd;
+
+    .header__menu {
+      background-color: #202733;
+
+      @media screen and (min-width: 767px) {
+        background-color: transparent;
+      }
+    }
+
+    .home__text {
+      color: var(--title-color);
+    }
+  }
 }
 
 body {
