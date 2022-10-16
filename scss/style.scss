@@ -43,6 +43,7 @@ html {
   height: 100%;
   background-color: var(--container-color);
   scroll-behavior: smooth;
+  transition: var(--transition-300);
 
   // DARK MODE
   &.dark {
