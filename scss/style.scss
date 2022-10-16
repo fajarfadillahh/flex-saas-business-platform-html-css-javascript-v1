@@ -70,7 +70,7 @@ img {
     font-weight: var(--font-bold);
     color: var(--title-color);
     padding-bottom: 1rem;
-    line-height: 145%;
+    line-height: 135%;
   }
 
   &-text {
@@ -337,6 +337,21 @@ img {
 
     &__title {
       font-size: 42px;
+    }
+  }
+}
+
+// width 1120px
+@media screen and (min-width: 1120px) {
+  .home {
+    padding-top: 10rem;
+
+    &__title {
+      font-size: 52px;
+    }
+
+    &__text {
+      width: 470px;
     }
   }
 }
