@@ -109,7 +109,7 @@ img {
   width: 100%;
   top: 0;
   left: 0;
-  background-color: transparent;
+  background-color: var(--container-color);
   z-index: var(--z-fixed);
   transition: var(--transition-300);
 
@@ -191,5 +191,54 @@ img {
     font-size: 1.5rem;
     color: var(--title-color);
     cursor: pointer;
+  }
+}
+
+// ===== HEADER SECTION =====
+.home {
+  &__container {
+    display: grid;
+    gap: 3rem;
+  }
+
+  &__data,
+  &__img {
+    justify-self: center;
+  }
+
+  &__badge {
+    display: inline-flex;
+    padding: 0.3rem 0.8rem;
+    background-color: var(--green-color);
+    border-radius: 10rem;
+    font-size: 15px;
+    color: var(--white-color);
+    margin-bottom: 1rem;
+  }
+
+  &__buttons {
+    display: grid;
+    gap: 1rem;
+
+    &-works {
+      display: inline-flex;
+      justify-self: center;
+      align-items: center;
+      gap: 8px;
+      font-size: 15px;
+      font-weight: var(--font-medium);
+      color: var(--title-color);
+    }
+
+    &-play {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.5rem;
+      background-color: var(--green-color);
+      border-radius: 50%;
+      font-size: 1.5rem;
+      color: var(--white-color);
+    }
   }
 }
